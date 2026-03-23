@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
+      genero.hasMany(models.pelicula, {foreignKey: 'generoId'});
       // define association here
     }
   }
